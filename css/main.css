@@ -1,4 +1,103 @@
-body {
-    color: red;
-    font-size: 5em;
+/* ==========================================================================
+   Fonts
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=Handjet:wght@100..900&display=swap');
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+h1,
+h2,
+h3 {
+    font-family: "Changa", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 1.4em;
+    font-style: normal;
 }
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+.Header-logo {
+    max-height: 53px;
+}
+
+#header-primary {
+    color: #fff !important;
+}
+
+/* ==========================================================================
+   Links & Buttons
+   ========================================================================== */
+.LinksButton:not(.LinksButton--label).active {
+    font-weight: 700;
+}
+
+.LinksButton-title {
+    color: #fff;
+}
+
+.LinksButton--inDropdown .LinksButton-title {
+    color: #000;
+}
+
+/* ==========================================================================
+   Index Pages
+   ========================================================================== */
+/* Hello =) */
+.IndexPage--tag667 .IndexPage-toolbar,
+/* Sélection Incongrue */
+.IndexPage--tag672 .IndexPage-toolbar,
+/* Excroissances */
+.IndexPage--tag673 .IndexPage-toolbar {
+    display: none;
+}
+
+.IndexPage--tag5 .item-userFilter {
+    display: none;
+}
+
+/* ==========================================================================
+   Discussion List
+   ========================================================================== */
+.DiscussionList-discussions > li:not(:last-child) {
+    border-bottom: 1px solid;
+}
+
+.DiscussionListItem-info {
+    list-style-type: none;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 14px;
+    color: var(--muted-more-color);
+}
+
+li.item-terminalPost {
+    display: block;
+    margin-top: 1em;
+}
+
+/* ==========================================================================
+   Utilities
+   ========================================================================== */
+.flamoji {
+    font-size: 4em;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+@media (min-width: 768px) {
+    .DiscussionListItem-title {
+        font-size: 1.5em;
+        color: #56446d;
+        font-weight: 400;
+    }
+}
+
+@media (min-width: 1100px) {
+    .container {
+        width: 1270px;
+    }
+}
+
