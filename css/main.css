@@ -62,7 +62,7 @@ h3 {
    ========================================================================== */
 
 .ScrubberTitle {
-    display: none;
+    display: none !important;
 }
 
 .DiscussionList-discussions > li:not(:last-child) {
